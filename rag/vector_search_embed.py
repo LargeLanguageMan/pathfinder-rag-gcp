@@ -1,13 +1,14 @@
 from vertexai import rag
 import vertexai
 import os
+from google.cloud import storage
 
 PROJECT_ID = "project-pathfinder-447802"
 vector_search_index_name = "projects/288327094814/locations/us-central1/indexes/4586419241221095424"
 vector_search_index_endpoint_name = "projects/288327094814/locations/us-central1/indexEndpoints/3534582437625462784"
 display_name = "test_corpus"
 description = "Corpus Description"
-paths = ["gs://pathfinder_poc_pdf/test_small/"]
+paths = ["gs://pathfinder_poc_pdf/pdf_output/"]
 
 # Initialize Vertex AI API once per session
 vertexai.init(project=PROJECT_ID, location="us-central1")
@@ -23,20 +24,27 @@ vector_db = rag.VertexVectorSearch(
 )
 
 def create_corpus():
-    if os.path.exists('corpus_name.txt'):
-        with open('corpus_name.txt', 'r') as f:
-            corpus_name = f.read()
-            return corpus_name
-    else:
+    # Initialize GCS client
+    storage_client = storage.Client()
+    bucket_name = "pathfinder_poc_pdf"
+    blob_name = "corpus/corpus_name.txt"
+    bucket = storage_client.bucket(bucket_name)
+    blob = bucket.blob(blob_name)
+
+    # Check if corpus name already exists in GCS
+    try:
+        corpus_name = blob.download_as_text()
+        return corpus_name
+    except Exception:
+        # Create new corpus if file doesn't exist
         corpus = rag.create_corpus(
             display_name=display_name,
             description=description
             # embedding_model_config=embedding_model_config,
             # vector_db=vector_db,
         )
-        #create text file with corpus.name
-        with open('corpus_name.txt', 'w') as f:
-            f.write(corpus.name)
+        # Upload corpus name to GCS
+        blob.upload_from_string(corpus.name)
         return corpus.name
 
 transformation_config = rag.TransformationConfig(

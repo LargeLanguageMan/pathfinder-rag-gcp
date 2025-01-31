@@ -3,3 +3,4 @@ vertexai>=0.0.1
 protobuf>=4.25.1
 google-auth>=2.23.0
 google-cloud-storage>=2.13.0
+functions-framework==3.*

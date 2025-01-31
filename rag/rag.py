@@ -1,15 +1,18 @@
-
-
 from vertexai import rag
 from vertexai.preview.generative_models import GenerativeModel, Tool
 import vertexai
 import os
+from google.cloud import storage
 
 PROJECT_ID = "project-pathfinder-447802"
+
 def get_corpus_name():
-    with open('corpus_name.txt', 'r') as f:
-        corpus_name = f.read()
-    return corpus_name
+    storage_client = storage.Client()
+    bucket_name = "pathfinder_poc_pdf"
+    blob_name = "corpus/corpus_name.txt"
+    bucket = storage_client.bucket(bucket_name)
+    blob = bucket.blob(blob_name)
+    return blob.download_as_text().strip()
 
 corpus_name = get_corpus_name()
 print(corpus_name)
@@ -51,5 +54,5 @@ rag_retrieval_tool = Tool.from_retrieval(
 rag_model = GenerativeModel(
     model_name="gemini-1.5-flash-001", tools=[rag_retrieval_tool]
 )
-response = rag_model.generate_content("what does OCR stand for?")
+response = rag_model.generate_content("give me a list of all data subject rights, then summarise them. if possible tell me on what page this is on ")
 print(response.text)
