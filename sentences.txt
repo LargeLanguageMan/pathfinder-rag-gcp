@@ -1,0 +1,100 @@
+ANNEX A
+DEFINITIONS
+Data steward: The head of each entity, unless otherwise determined by the Secretary-General. 29
+Data subject: The data subject is any identified or identifiable natural person to whom personal data that are being processed by or on behalf of the Secretariat relate, including but not limited to a staff member, individual contractor or consultant, other United Nations personnel, an attendee at an official meeting or a beneficiary of assistance. 30
+Data transfer: The act of transferring data or making it accessible to a partner using any means, such as in hard copy, electronic means or the internet.
+Harm: Negative implications of a data management activity on the rights of a data subject, or a group of data subjects, including but not limited to physical and psychological harm, discrimination and denial of access to services.
+Identifiable natural person: An identifiable natural person is a natural person who can be directly or indirectly identified by means likely to be used, such as reasonably available expertise, resources and time, as well as data already available. 31
+Information management: Gathering, sharing and using data and information, underpinning coordination, decision-making and advocacy.
+Information product: Product derived from raw data that is organized in a way that conveys intended information to users (e.g., infographics, charts, maps, situation reports, etc.).
+Non-personal data: Any information which does not relate to a data subject. Non-personal data can be categorized in terms of origin, namely: data that has never related to a data subject, such as data about the context in which a response is taking place and data about humanitarian response actors and their activities; or data that was initially personal data but later made anonymous, such as data about the people affected by the humanitarian situation and their needs, the threats and vulnerabilities they face, and their capacities. Non-personal data includes Demographically Identifiable Information (DII) i.e., data that enables the identification of groups of individuals by demographically defining factors, such as ethnicity, gender, age, occupation, religion, or location.32
+Non-personal data in a sensitive context: Information, in any form, that, while not relating to an identified or identifiable natural person, may, by reason of its sensitive context, put certain individuals and groups at risk of harm, including vulnerable or marginalized individuals and groups of individuals, such as children.33
+Operational data management: The design of data management activities and subsequent collection or receipt, storage, processing, analysis, sharing, use, and retention and destruction of data and information by humanitarian actors. Such activities occur as part of humanitarian action throughout the planning and response cycle across clusters/sectors and include, but are not limited to, situational analysis, needs assessments, population data management, registration and enrollment, case management, communicating with affected populations, protection monitoring, and response monitoring and evaluation. 34
+Personal data: Information, in any form, that relates to an identified or identifiable natural person ('data subject').35
+29 UN Secretariat, Secretary-General's bulletin on Data protection and privacy policy for the Secretariat of the United Nations, ST/SGB/2024/3 (2024). 30 UN Secretariat, Secretary-General's bulletin on Data protection and privacy policy for the Secretariat of the United Nations, ST/SGB/2024/3 (2024). 31 UN Secretariat, Secretary-General's bulletin on Data protection and privacy policy for the Secretariat of the United Nations, ST/SGB/2024/3 (2024). 32 IASC, Operational Guidance on Data Responsibility in Humanitarian Action (2021).
+33 Based on UN Secretariat, Secretary-General's bulletin on Data protection and privacy policy for the Secretariat of the United Nations, ST/ SGB/2024/3 (2024).
+34 IASC, Operational Guidance on Data Responsibility in Humanitarian Action (2021).
+35 Based on UN Secretariat, Secretary-General's bulletin on Data protection and privacy policy for the Secretariat of the United Nations, ST/ SGB/2024/3 (2024).
+OCHA CENTRE FOR HUMANITARIAN DATA
+40
+Sensitive data: Data that, if disclosed or accessed without proper authorization, is likely to cause:
+• harm (such as sanctions, discrimination) to any person, including the source of the information or other identifiable persons or groups, or;
+• a negative impact on an organization's capacity to carry out its activities or on public perceptions of that organization.
+Sensitive data includes personal data as well as ‘non-personal data in a sensitive context’. Non-personal data in a sensitive context is information, in any form, that, while not relating to an identified or identifiable natural person, may, by reason of its sensitive context, put certain individuals and groups at risk of harm, including vulnerable or marginalized individuals and groups of individuals, such as children. The same types of data may have different levels of sensitivity in different contexts and sensitivity may change over time.
+OCHA CENTRE FOR HUMANITARIAN DATA
+41
+ANNEX B
+DATA RESPONSIBILITY IN OCHA'S DATA MANAGEMENT CYCLE
+The table below provides a summary of the tips and outputs for data responsibility along the steps of a data management cycle. Approved tools to support responsible data management across the steps of a data management cycle are listed on the OCHA IMB SharePoint page on Technology Standards.
+TIPS AND OUTPUTS FOR DATA RESPONSIBILITY ACROSS THE DATA MANAGEMENT CYCLE
+4. SHARING
+TIPS
+☐
+This involves sharing data
+privately with partners or
+Select a responsible approach to sharing based on the relevant ISP or other applicable guidance.
+making it available publicly for
+☐
+Use data sharing agreements and licenses.
+open access.
+5. ANALYZING
+This focuses on the extraction of information as required for the development of information products.
+☐ Provide metadata.
+☐ Take additional precautions when sharing sensitive data.
+☐
+Log data sharing in the data management registry.
+OUTPUTS
+☐ Responsibly shared data.
+☐
+Entry on data sharing in data management registry.
+TIPS
+☐
+☐
+☐
+Ensure clear documentation of methods used. Prevent exposure of sensitive data during analysis or visualization. Take extra precautions when using advanced analytical methods, including artificial intelligence.
+OUTPUTS
+☐
+appropriate documentation.
+Charts, graphs or maps displaying information, accompanied by
+6. PRESENTING
+This involves incorporating
+insights from the data into
+internal or public information products and websites.
+TIPS
+☐ Include context and data sources in published products.
+☐ Ensure appropriate approval before release and select an appropriate license.
+OUTPUTS
+☐ Responsibly published information products.
+7. RETAINING AND DESTROYING
+This entails keeping data available for future use, or ensuring the removal of data in a way that renders retrieval impossible.
+TIPS
+Assess the potential future value of data.
+☐ Balance the risk and utility of data.
+☐
+Select the right means for long-term storage. ☐ Regularly reassess the sensitivity level of the data retained.
+☐ Ensure effective destruction of data.
+OUTPUTS
+☐ Securely retained datasets.
+☐ Effectively destroyed datasets, with clear documentation of this step
+☐
+and the datasets concerned.
+Comply with internal processes established by the Data Steward related to data retention.
+8. EVALUATING
+This entails internal review of the data management activity or joint review with partners as appropriate.
+TIPS
+☐
+Include data responsibility considerations in any evaluation exercise
+conducted for the activity.
+☐ Communicate the use of data with stakeholders.
+☐
+Record any data incidents that occurred throughout the activity. OUTPUTS
+☐ Finalized data management activity with documentation of any data incidents.
+OCHA CENTRE FOR HUMANITARIAN DATA
+43
+ANNEX C
+TEMPLATES FOR DATA RESPONSIBILITY
+The following templates are designed to support adoption of the OCHA Data Responsibility Guidelines. Some of the templates are OCHA-specific while others are drawn from the IASC Operational Guidance on Data Responsibility in Humanitarian Action.
+Templates from the IASC Operational Guidance:
+Templates specific to OCHA:
+ANNEX D
+FOUNDATIONS FOR DATA RESPONSIBILITY AT OCHA
